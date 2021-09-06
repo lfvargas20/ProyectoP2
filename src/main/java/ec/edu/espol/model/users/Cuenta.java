@@ -33,7 +33,6 @@ public class Cuenta implements Serializable{
     protected String contraseña;
     protected String nivelAcceso;
     // CONSTRUCTOR
-    public Cuenta(){}
     public Cuenta(String nombre, String apellido, String email, String organizacion, String usuario, String contraseña,String nivelAcceso){
         this.nombres = nombre;
         this.apellidos = apellido;
