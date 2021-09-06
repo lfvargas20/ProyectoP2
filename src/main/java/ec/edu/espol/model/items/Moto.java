@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author T_User
+ * @author Leon
  */
 public class Moto extends Vehiculo{
     private String marca;

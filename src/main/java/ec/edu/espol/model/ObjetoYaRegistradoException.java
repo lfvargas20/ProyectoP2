@@ -7,7 +7,7 @@ package ec.edu.espol.model;
 
 /**
  *
- * @author T_User
+ * @author Melanie
  */
 public class ObjetoYaRegistradoException extends Exception{
     

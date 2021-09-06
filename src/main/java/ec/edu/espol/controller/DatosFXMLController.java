@@ -22,7 +22,7 @@ import javafx.scene.text.Text;
 /**
  * FXML Controller class
  *
- * @author T_User
+ * @author Carlos
  */
 public class DatosFXMLController implements Initializable {
 

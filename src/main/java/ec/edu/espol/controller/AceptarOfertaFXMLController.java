@@ -6,6 +6,7 @@
 package ec.edu.espol.controller;
 
 import ec.edu.espol.gui.App;
+import ec.edu.espol.model.CompareByPrecio;
 import ec.edu.espol.model.Oferta;
 import ec.edu.espol.model.Util;
 import java.io.File;
@@ -35,7 +36,7 @@ import javafx.scene.text.Text;
 /**
  * FXML Controller class
  *
- * @author T_User
+ * @author Leon
  */
 public class AceptarOfertaFXMLController implements Initializable {
     
@@ -66,7 +67,7 @@ public class AceptarOfertaFXMLController implements Initializable {
             a.show();
         }else{
             ArrayList<Oferta> ofertas = Oferta.leer("ofertas");
-            ofertas.sort(Oferta ::compareTo);
+            Collections.sort(ofertas,new CompareByPrecio());
             for(Oferta o : ofertas){
                 if(o.getPlaca().equals(placas.getText())){
                     Text txt = new Text(o.toString());

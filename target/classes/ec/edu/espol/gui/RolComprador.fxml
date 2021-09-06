@@ -11,29 +11,29 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espol.controller.RolCompradorController">
    <children>
-      <Text fill="#dd0c0c" layoutX="188.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtro de Busqueda">
+      <Text layoutX="152.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventana de Filtro de Busqueda">
          <font>
-            <Font name="Consolas Bold Italic" size="36.0" />
+            <Font name="Arial Bold Italic" size="36.0" />
          </font>
       </Text>
-      <Text layoutX="53.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimo" />
-      <Text layoutX="179.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximo" />
-      <Text layoutX="60.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimo" />
-      <Text layoutX="178.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximo" />
-      <Text layoutX="53.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimo" />
-      <Text layoutX="179.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximo" />
-      <Text layoutX="112.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo" />
-      <Text layoutX="116.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Año" />
-      <Text layoutX="105.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" />
-      <ComboBox fx:id="cbx1" layoutX="71.0" layoutY="84.0" prefHeight="26.0" prefWidth="107.0" />
-      <ComboBox fx:id="cbx2" layoutX="11.0" layoutY="186.0" prefHeight="26.0" prefWidth="107.0" />
-      <Text layoutX="97.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recorrido" />
-      <ComboBox fx:id="cbx3" layoutX="137.0" layoutY="186.0" prefHeight="26.0" prefWidth="107.0" />
-      <ComboBox fx:id="cbx4" layoutX="11.0" layoutY="305.0" prefHeight="26.0" prefWidth="107.0" />
-      <ComboBox fx:id="cbx5" layoutX="135.0" layoutY="305.0" prefHeight="26.0" prefWidth="107.0" />
-      <ComboBox fx:id="cbx6" layoutX="11.0" layoutY="415.0" prefHeight="26.0" prefWidth="107.0" />
-      <ComboBox fx:id="cbx7" layoutX="138.0" layoutY="415.0" prefHeight="26.0" prefWidth="107.0" />
-      <Button layoutX="256.0" layoutY="410.0" mnemonicParsing="false" onAction="#regresar" prefHeight="36.0" prefWidth="73.0" text="Regresar" />
+      <Text layoutX="19.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Año minimo" />
+      <Text layoutX="137.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Año maximo" />
+      <Text layoutX="18.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio minimo" />
+      <Text layoutX="134.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio maximo" />
+      <Text layoutX="18.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recorrido minimo" />
+      <Text layoutX="134.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recorrido maximo" />
+      <Text layoutX="18.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de vehiculo" />
+      <Text layoutX="17.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Año" />
+      <Text layoutX="17.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio (en dolares)" />
+      <ComboBox fx:id="cbx1" layoutX="23.0" layoutY="80.0" prefHeight="26.0" prefWidth="107.0" />
+      <ComboBox fx:id="cbx2" layoutX="13.0" layoutY="166.0" prefHeight="26.0" prefWidth="107.0" />
+      <Text layoutX="17.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recorrido (en kilometros)" />
+      <ComboBox fx:id="cbx3" layoutX="139.0" layoutY="166.0" prefHeight="26.0" prefWidth="107.0" />
+      <ComboBox fx:id="cbx4" layoutX="13.0" layoutY="285.0" prefHeight="26.0" prefWidth="107.0" />
+      <ComboBox fx:id="cbx5" layoutX="137.0" layoutY="285.0" prefHeight="26.0" prefWidth="107.0" />
+      <ComboBox fx:id="cbx6" layoutX="13.0" layoutY="395.0" prefHeight="26.0" prefWidth="107.0" />
+      <ComboBox fx:id="cbx7" layoutX="140.0" layoutY="395.0" prefHeight="26.0" prefWidth="107.0" />
+      <Button layoutX="14.0" layoutY="430.0" mnemonicParsing="false" onAction="#regresar" prefHeight="4.0" prefWidth="74.0" text="Atras" />
       <ScrollPane layoutX="340.0" layoutY="121.0" prefHeight="394.0" prefWidth="376.0">
          <content>
             <VBox fx:id="fotos" alignment="TOP_CENTER" prefHeight="389.0" prefWidth="373.0" />
@@ -41,6 +41,7 @@
       </ScrollPane>
       <Text layoutX="13.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poner monto deseado a ofertar." />
       <HBox fx:id="hBoxOferta" alignment="CENTER_LEFT" layoutX="14.0" layoutY="485.0" prefHeight="61.0" prefWidth="300.0" />
-      <Button layoutX="268.0" layoutY="377.0" mnemonicParsing="false" onMouseClicked="#buscarAutos" text="Buscar" />
+      <Button layoutX="91.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#buscarAutos" prefHeight="26.0" prefWidth="122.0" text="Buscar por precio" />
+      <Button layoutX="218.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#buscarPorAnio" text="Buscar por año" />
    </children>
 </AnchorPane>

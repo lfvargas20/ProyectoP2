@@ -9,7 +9,7 @@ import ec.edu.espol.model.users.Cuenta;
 import ec.edu.espol.model.Util;
 /**
  *
- * @author T_User
+ * @author Melanie
  */
 public class Comprador extends Cuenta{
     

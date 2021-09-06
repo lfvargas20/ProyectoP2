@@ -17,12 +17,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 /**
  * FXML Controller class
  *
- * @author Jose
+ * @author Carlos
  */
 public class RegistroFXMLController implements Initializable {
 
@@ -38,7 +39,7 @@ public class RegistroFXMLController implements Initializable {
     @FXML
     private TextField txtusuario;
     @FXML
-    private TextField txtcontraseña;
+    private PasswordField txtcontraseña;
     @FXML
     private CheckBox checkcomprador;
     @FXML

@@ -7,7 +7,7 @@ package ec.edu.espol.gui;
 
 /**
  *
- * @author Jose
+ * @author Leon
  */
 public class Principal {
     public static void main(String[] args){

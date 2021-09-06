@@ -13,11 +13,14 @@ ec\edu\espol\controller\VehiculoFXMLController.class
 ec\edu\espol\model\items\Moto.class
 module-info.class
 ec\edu\espol\model\users\Comprador.class
+ec\edu\espol\model\CompareVehiculoByPrecio.class
 ec\edu\espol\controller\ContraFXMLController.class
+ec\edu\espol\model\CompareVehiculoByAnio.class
 ec\edu\espol\model\Util.class
 ec\edu\espol\controller\RegistroFXMLController.class
 ec\edu\espol\model\users\Vendedor.class
 ec\edu\espol\controller\DatosFXMLController.class
+ec\edu\espol\model\CompareByPrecio.class
 ec\edu\espol\model\users\Cuenta.class
 ec\edu\espol\model\items\Vehiculo.class
 ec\edu\espol\controller\OpcionesFXMLController$2.class

@@ -17,9 +17,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 /**
  *
- * @author T_User
+ * @author Carlos
  */
-public class Oferta implements Serializable,Comparable<Oferta>{
+public class Oferta implements Serializable{
     
     private String placa;
     private String correo;
@@ -109,16 +109,6 @@ public class Oferta implements Serializable,Comparable<Oferta>{
     
   
 
-    @Override
-    public int compareTo(Oferta o) {
-        
-        double precio = this.precioC;
-        if(o.precioC == precio)
-            return 0;
-        else if(precio < o.precioC)
-            return 1;
-        else
-            return -1;
-    }
+    
     
 }

@@ -10,7 +10,7 @@ import ec.edu.espol.model.items.Vehiculo;
 
 /**
  *
- * @author T_User
+ * @author Leon
  */
 public class Auto extends Vehiculo{
     private String marca;

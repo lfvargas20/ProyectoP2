@@ -40,7 +40,7 @@ import javafx.stage.FileChooser.ExtensionFilter;
 /**
  * FXML Controller class
  *
- * @author T_User
+ * @author Melanie
  */
 public class VehiculoFXMLController implements Initializable {
 

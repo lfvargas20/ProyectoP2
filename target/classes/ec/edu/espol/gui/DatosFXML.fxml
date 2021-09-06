@@ -6,52 +6,52 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="253.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espol.controller.DatosFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espol.controller.DatosFXMLController">
    <children>
-      <Text layoutX="34.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cambiar rol del usuario:">
+      <Text layoutX="62.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cambiar rol del usuario:">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="222.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres:">
+      <Text layoutX="318.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres:">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="222.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos:">
+      <Text layoutX="318.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos:">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="222.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electronico:">
+      <Text layoutX="318.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electronico:">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="222.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organización:">
+      <Text layoutX="318.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organización:">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="222.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:">
+      <Text layoutX="318.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="222.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:">
+      <Text layoutX="318.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Button layoutX="41.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#CambiarAContraseña" text="Cambiar contraseña" />
-      <CheckBox fx:id="checkcomprador" layoutX="61.0" layoutY="61.0" mnemonicParsing="false" text="Comprador" />
-      <CheckBox fx:id="checkvendedor" layoutX="61.0" layoutY="95.0" mnemonicParsing="false" text="Vendedor" />
-      <Button layoutX="41.0" layoutY="186.0" mnemonicParsing="false" onMouseClicked="#VolverAOpciones" prefHeight="26.0" prefWidth="124.0" text="Regresar" />
-      <Text fx:id="nom" layoutX="315.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="ape" layoutX="315.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="ema" layoutX="315.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="org" layoutX="315.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="usu" layoutX="315.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="contra" layoutX="315.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button layoutX="69.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#CambiarAContraseña" text="Cambiar contraseña" />
+      <CheckBox fx:id="checkcomprador" layoutX="89.0" layoutY="142.0" mnemonicParsing="false" text="Comprador" />
+      <CheckBox fx:id="checkvendedor" layoutX="89.0" layoutY="176.0" mnemonicParsing="false" text="Vendedor" />
+      <Button layoutX="69.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#VolverAOpciones" prefHeight="26.0" prefWidth="124.0" text="Atras" />
+      <Text fx:id="nom" layoutX="411.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="ape" layoutX="411.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="ema" layoutX="411.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="org" layoutX="411.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="usu" layoutX="411.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="contra" layoutX="411.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    </children>
 </AnchorPane>

@@ -6,6 +6,8 @@
 package ec.edu.espol.controller;
 
 import ec.edu.espol.gui.App;
+import ec.edu.espol.model.CompareVehiculoByAnio;
+import ec.edu.espol.model.CompareVehiculoByPrecio;
 import ec.edu.espol.model.Oferta;
 import ec.edu.espol.model.items.Vehiculo;
 import ec.edu.espol.model.users.Cuenta;
@@ -13,6 +15,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -35,7 +38,7 @@ import javafx.scene.text.Text;
 /**
  * FXML Controller class
  *
- * @author T_User
+ * @author Melanie
  */
 public class RolCompradorController implements Initializable {
 
@@ -224,6 +227,77 @@ private ArrayList<String> usuario;
             }
         }
         fotos.getChildren().clear();
+        Collections.sort(filtrada4,new CompareVehiculoByPrecio());
+        for(Vehiculo v : filtrada4){
+            HBox datosCarro = new HBox();
+            Text t = new Text(v.toString());
+            datosCarro.setSpacing(10);
+            Image img = new Image("img/"+v.getLink());
+            ImageView imgview = new ImageView(img);
+            imgview.setFitWidth(150);
+            imgview.setFitHeight(150);
+            datosCarro.getChildren().add(t);
+            datosCarro.getChildren().add(imgview);
+            fotos.getChildren().add(datosCarro);
+            ofertar(imgview);
+        }
+    }
+
+    @FXML
+    private void buscarPorAnio(MouseEvent event) {
+    ArrayList<Vehiculo> vehic = Vehiculo.leer("vehiculos");
+        filtrada.clear();
+        filtrada2.clear();
+        filtrada3.clear();
+        filtrada4.clear();
+        for(Vehiculo v : vehic){
+            if((String)cbx1.getValue() == null){
+                filtrada.add(v);
+            }else if(v.getTipo().equals((String)cbx1.getValue())){
+                filtrada.add(v);
+            }
+        }
+        for(Vehiculo v1 : filtrada){
+            Integer añoIni = (Integer)cbx2.getValue();
+            Integer añoFin = (Integer)cbx3.getValue();
+            if(añoIni == null && añoFin==null){
+                filtrada2.add(v1);
+            }else if(añoIni == null && v1.getAño()<= añoFin){
+                filtrada2.add(v1);
+            }else if(v1.getAño()>= añoIni && añoFin == null){
+                filtrada2.add(v1);
+            }else if((v1.getAño() >= añoIni) && (v1.getAño() <= añoFin)){
+                filtrada2.add(v1);
+            }
+        }
+        for(Vehiculo v2 : filtrada2){
+            Double recoIni = (Double)cbx4.getValue();
+            Double recoFin = (Double)cbx5.getValue();
+            if(recoIni == null && recoFin==null){
+                filtrada3.add(v2);
+            }else if(recoIni == null && v2.getRecorrido()<= recoFin){
+                filtrada3.add(v2);
+            }else if(v2.getRecorrido()>= recoIni && recoFin == null){
+                filtrada3.add(v2);
+            }else if((v2.getRecorrido()>= recoIni) && (v2.getRecorrido()<= recoFin)){
+                filtrada3.add(v2);
+            }
+        }
+        for(Vehiculo v3 : filtrada3){
+            Double precioIni = (Double)cbx6.getValue();
+            Double precioFin = (Double)cbx7.getValue();
+            if(precioIni == null && precioFin==null){
+                filtrada4.add(v3);
+            }else if(precioIni == null && v3.getPrecio() <= precioFin){
+                filtrada4.add(v3);
+            }else if(v3.getPrecio()>= precioIni && precioFin == null){
+                filtrada4.add(v3);
+            }else if((v3.getPrecio()>= precioIni) && (v3.getPrecio()<= precioFin)){
+                filtrada4.add(v3);
+            }
+        }
+        fotos.getChildren().clear();
+        Collections.sort(filtrada4,new CompareVehiculoByAnio());
         for(Vehiculo v : filtrada4){
             HBox datosCarro = new HBox();
             Text t = new Text(v.toString());

@@ -22,7 +22,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author T_User
+ * @author Melanie
  */
 public class Cuenta implements Serializable{
     protected String nombres;

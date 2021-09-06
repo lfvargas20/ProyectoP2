@@ -7,7 +7,7 @@ package ec.edu.espol.model;
 
 /**
  *
- * @author INTEL
+ * @author Melanie
  */
 public class MalosDatosException extends Exception{
     

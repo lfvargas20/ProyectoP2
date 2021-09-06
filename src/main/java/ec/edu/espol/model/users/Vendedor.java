@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author T_User
+ * @author Melanie
  */
 public class Vendedor extends Cuenta{
     public Vendedor(){} 

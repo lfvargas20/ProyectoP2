@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author T_User
+ * @author Leon
  */
 public class Camioneta extends Vehiculo{
     private String marca;

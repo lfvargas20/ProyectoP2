@@ -21,7 +21,7 @@ import javafx.scene.input.MouseEvent;
 /**
  * FXML Controller class
  *
- * @author T_User
+ * @author Carlos
  */
 public class ContraFXMLController implements Initializable {
 

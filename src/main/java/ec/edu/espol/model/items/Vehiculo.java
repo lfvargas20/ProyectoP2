@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 /**
  *
- * @author T_User
+ * @author Leon
  */
 public abstract class Vehiculo implements Serializable{
     protected String placa;

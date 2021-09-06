@@ -12,9 +12,9 @@
    <top>
       <AnchorPane prefHeight="44.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Text layoutX="184.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingreso de vehículos">
+            <Text layoutX="120.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventana de Ingreso de vehículos">
                <font>
-                  <Font name="System Bold Italic" size="24.0" />
+                  <Font name="Arial Bold" size="24.0" />
                </font>
             </Text>
          </children>

@@ -23,11 +23,10 @@ import javax.mail.internet.MimeMessage;
 
 /**
  *
- * @author T_User
+ * @author Carlos
  */
 public class Util {
-    // LOS MÉTODOS ESTATICOS SOLO FUNCIONAN EN LA CLASE, Y SE LLAMAN CON LA CLASE
-    // Los estáticos no se sobreescriben ni se heredan, como los private y los final
+
     
     public static int pedirInt(){
         Scanner sc = new Scanner(System.in);
