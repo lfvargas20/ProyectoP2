@@ -51,8 +51,8 @@ public class OpcionesFXMLController implements Initializable {
         try {
                 FXMLLoader fxmlloader = App.loadFXMLLoader("DatosFXML");
                 App.setRoot(fxmlloader);
-                App.setWidth(510);
-                App.setHeight(278);
+                App.setWidth(664);
+                App.setHeight(429);
                 DatosFXMLController bc = fxmlloader.getController();
                 bc.setDatos(datos);
             } catch (IOException ex) {
@@ -107,7 +107,7 @@ public class OpcionesFXMLController implements Initializable {
                    FXMLLoader fxmlloader = App.loadFXMLLoader("VehiculoFXML");
                     App.setRoot(fxmlloader);
                     App.setWidth(600);
-                    App.setHeight(400);
+                    App.setHeight(600);
                     VehiculoFXMLController bc = fxmlloader.getController();
                     bc.setDatos(datos);
                 } catch (IOException ex) {
