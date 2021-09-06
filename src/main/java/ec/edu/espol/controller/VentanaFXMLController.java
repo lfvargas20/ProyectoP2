@@ -50,8 +50,8 @@ public class VentanaFXMLController implements Initializable {
             try {
                 FXMLLoader fxmlloader = App.loadFXMLLoader("OpcionesFXML");
                 App.setRoot(fxmlloader);
-                App.setHeight(205);
-                App.setWidth(480);
+                App.setHeight(305);
+                App.setWidth(615);
                 OpcionesFXMLController bc = fxmlloader.getController();
                 bc.setDatos(dat);
                 bc.generarBotones();
@@ -69,7 +69,7 @@ public class VentanaFXMLController implements Initializable {
     @FXML
     private void CambiarAR(MouseEvent e){
         try {
-            App.setRoot("RegistroFXML",300,500);
+            App.setRoot("RegistroFXML",496,537);
         }catch (IOException ex){
             Alert a = new Alert(Alert.AlertType.ERROR,"No se pudo cambiar de ventana");
             a.show();

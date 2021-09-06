@@ -64,8 +64,8 @@ public class ContraFXMLController implements Initializable {
     public void cambiarRootADatos() throws IOException{
             FXMLLoader fxmlloader = App.loadFXMLLoader("DatosFXML");
             App.setRoot(fxmlloader);
-            App.setWidth(510);
-            App.setHeight(278);
+            App.setWidth(664);
+            App.setHeight(429);
             DatosFXMLController bc = fxmlloader.getController();
             bc.setDatos(Cuenta.datos(usuario));
     }

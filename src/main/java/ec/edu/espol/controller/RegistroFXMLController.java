@@ -79,7 +79,7 @@ public class RegistroFXMLController implements Initializable {
                     try {
                         Alert a = new Alert(Alert.AlertType.CONFIRMATION,"Se ha registrado exitosamente");
                         a.show();
-                        App.setRoot("VentanaFXML",400,215);
+                        App.setRoot("VentanaFXML",446,398);
                             } 
                     catch (IOException ex) {
                         Alert a = new Alert(Alert.AlertType.ERROR,"No se pudo cambiar las ventanas");
@@ -102,7 +102,7 @@ public class RegistroFXMLController implements Initializable {
     @FXML
     private void VolverAV(MouseEvent event) {
         try {
-            App.setRoot("VentanaFXML",400,215);
+            App.setRoot("VentanaFXML",446,398);
         }catch (IOException ex){
             Alert a = new Alert(Alert.AlertType.ERROR,"No se pudo cambiar las ventana");
             a.show();

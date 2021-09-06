@@ -85,8 +85,8 @@ public class DatosFXMLController implements Initializable {
         try {
                 FXMLLoader fxmlloader = App.loadFXMLLoader("ContraFXML");
                 App.setRoot(fxmlloader);
-                App.setWidth(238);
-                App.setHeight(293);
+                App.setWidth(364);
+                App.setHeight(368);
                 ContraFXMLController bc = fxmlloader.getController();
                 bc.setUsuario(usu.getText());
         }catch (IOException ex){
@@ -113,8 +113,8 @@ public class DatosFXMLController implements Initializable {
             Cuenta.serializar(cuentas, "cuentas");
                 FXMLLoader fxmlloader = App.loadFXMLLoader("OpcionesFXML");
                 App.setRoot(fxmlloader);
-                App.setWidth(480);
-                App.setHeight(205);
+                App.setWidth(615);
+                App.setHeight(305);
                 OpcionesFXMLController bc = fxmlloader.getController();
                 bc.setDatos(Cuenta.datos(usu.getText()));
                 bc.generarBotones();

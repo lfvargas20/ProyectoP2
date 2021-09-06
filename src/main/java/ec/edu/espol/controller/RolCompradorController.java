@@ -162,8 +162,8 @@ private ArrayList<String> usuario;
         try{
             FXMLLoader fxmlloader = App.loadFXMLLoader("OpcionesFXML");
             App.setRoot(fxmlloader);
-            App.setWidth(480);
-            App.setHeight(205);
+            App.setWidth(615);
+            App.setHeight(305);
             OpcionesFXMLController bc = fxmlloader.getController();
             bc.setDatos(usuario);
             bc.generarBotones();

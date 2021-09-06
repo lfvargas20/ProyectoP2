@@ -90,8 +90,8 @@ public class OpcionesFXMLController implements Initializable {
                 try {
                     FXMLLoader fxmlloader = App.loadFXMLLoader("AceptarOfertaFXML");
                     App.setRoot(fxmlloader);
-                    App.setWidth(625);
-                    App.setHeight(425);
+                    App.setWidth(600);
+                    App.setHeight(506);
                     AceptarOfertaFXMLController bc = fxmlloader.getController();
                     bc.setUsuario(datos);
                 } catch (IOException ex) {
@@ -106,8 +106,8 @@ public class OpcionesFXMLController implements Initializable {
                 try {
                    FXMLLoader fxmlloader = App.loadFXMLLoader("VehiculoFXML");
                     App.setRoot(fxmlloader);
-                    App.setWidth(525);
-                    App.setHeight(440);
+                    App.setWidth(600);
+                    App.setHeight(400);
                     VehiculoFXMLController bc = fxmlloader.getController();
                     bc.setDatos(datos);
                 } catch (IOException ex) {
@@ -122,8 +122,8 @@ public class OpcionesFXMLController implements Initializable {
                 try {
                    FXMLLoader fxmlloader = App.loadFXMLLoader("RolComprador");
                     App.setRoot(fxmlloader);
-                    App.setWidth(890);
-                    App.setHeight(595);
+                    App.setWidth(766);
+                    App.setHeight(569);
                     RolCompradorController bc = fxmlloader.getController();
                     bc.setUsuario(datos);
                 } catch (IOException ex) {
@@ -137,7 +137,7 @@ public class OpcionesFXMLController implements Initializable {
     @FXML
     private void CambiarALogin(MouseEvent event) {
         try {
-            App.setRoot("VentanaFXML",400,215);
+            App.setRoot("VentanaFXML",446,398);
         }catch (IOException ex){
             Alert a = new Alert(Alert.AlertType.ERROR,"No se pudo cambiar de ventana");
             a.show();

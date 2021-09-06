@@ -214,8 +214,8 @@ public class VehiculoFXMLController implements Initializable {
     public void volver() throws IOException{
         FXMLLoader fxmlloader = App.loadFXMLLoader("OpcionesFXML");
         App.setRoot(fxmlloader);
-        App.setHeight(205);
-        App.setWidth(480);
+        App.setHeight(305);
+        App.setWidth(615);
         OpcionesFXMLController bc = fxmlloader.getController();
         bc.setDatos(datos);
         bc.generarBotones();

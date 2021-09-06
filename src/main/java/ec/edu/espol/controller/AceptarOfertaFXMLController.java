@@ -108,6 +108,8 @@ public class AceptarOfertaFXMLController implements Initializable {
         try{
             FXMLLoader fxmlloader = App.loadFXMLLoader("OpcionesFXML");
             App.setRoot(fxmlloader);
+            App.setHeight(305);
+            App.setWidth(615);
             OpcionesFXMLController bc = fxmlloader.getController();
             bc.setDatos(usuario);
             bc.generarBotones();
